@@ -64,7 +64,7 @@ This pipeline automates the genomic data processing workflow for sulfidic fish s
 
 2. **Run the Pipeline**:
    ```bash
-   snakemake --use-conda --cores <number-of-cores>
+   snakemake--cores <number-of-cores>
    ```
 
 3. **Visualize Workflow**:
