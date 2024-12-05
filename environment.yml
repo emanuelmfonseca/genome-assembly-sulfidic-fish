@@ -1,4 +1,4 @@
-name: sulfidic-fish-assembly-env
+name: genomic-pipeline
 channels:
   - bioconda
   - conda-forge
@@ -14,3 +14,4 @@ dependencies:
   - samtools=1.21
   - picard=3.2.0
   - gatk4=4.5.0.0
+  - graphviz=2.50.0

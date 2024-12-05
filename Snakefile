@@ -27,6 +27,16 @@ rule all:
         
         dict=f"data/Genomic_data/Reference_Genome/GCF_002775205.1_X_maculatus-5.0-male_genomic.dict",
         
+        qc=get_targets_from_csv(
+        	'data/Sample_Information/Extracted_Sample_Information.csv',
+        	'_1_fastqc.html'
+        ),
+        
+        re_qc=get_targets_from_csv(
+        	'data/Sample_Information/Extracted_Sample_Information.csv',
+        	'_R1_trimmed_fastqc.html'	
+        ),
+        
         merged_rg_file=[
             f"data/Genomic_data/{Species}/merged_bam/{Species}_rg.txt" for Species in species_accessions.keys()
         ],
@@ -60,7 +70,7 @@ rule download_fastq:
         fastq_1="data/Genomic_data/{Species}/{Accession}/{Accession}_1.fastq",
         fastq_2="data/Genomic_data/{Species}/{Accession}/{Accession}_2.fastq"
     params:
-        fastq_dump = 'Softwares/sratoolkit/bin/fastq-dump'
+        fastq_dump = config['fastq_dump_path']
     conda:
         "environment.yml"
     shell:

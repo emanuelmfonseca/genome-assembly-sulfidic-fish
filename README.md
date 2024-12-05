@@ -18,7 +18,7 @@ This pipeline automates the genomic data processing workflow for sulfidic fish s
 
 ## Requirements
 
-1. **Software**:
+1. **Key Software**:
    - [Snakemake](https://snakemake.readthedocs.io/en/stable/)
    - [Conda](https://docs.conda.io/)
    - [BWA](http://bio-bwa.sourceforge.net/)
@@ -81,9 +81,10 @@ This pipeline automates the genomic data processing workflow for sulfidic fish s
 data/
 ├── Genomic_data/
 │   ├── Reference_Genome/
-│   ├── <Species>/<Accession>/
-│   ├── merged_bam/
-│   └── final_vcf/
+│   ├── <Species>
+│   	├── <Accession>
+│   	├── merged_bam/
+│   	└── final_vcf/
 ├── Sample_Information/
 │   ├── Sample_Information.xml
 │   ├── Extracted_Sample_Information.csv

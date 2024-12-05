@@ -3,9 +3,10 @@
 
 .snakemake
 /cache
-data/Sample_Information/Extracted_Sample_Information.csv
-data/Sample_Information/Genomic_data
-Softwares
+/data/Sample_Information/Extracted_Sample_Information.csv
+/data/Genomic_data
+/Softwares
+workflow.png
 
 .DS_Store
 

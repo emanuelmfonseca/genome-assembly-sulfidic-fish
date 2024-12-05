@@ -12,8 +12,11 @@ def parse_xml(input, output):
     tree = ET.parse(input)
     root = tree.getroot()  # Access the root element of the XML document.
     
+    biosamples = root.findall('BioSample')
+    selected_elements = biosamples[:2] + biosamples[41:43] + biosamples[101:103]
+    
     # Loop through all 'BioSample' elements in the XML.
-    for biosample in root.findall('BioSample')[:2]:
+    for biosample in selected_elements:
         # Extract elements
         accession = biosample.get('accession', 'Unknown_Accession')
         organism_element = biosample.find('./Description/Organism/OrganismName')
