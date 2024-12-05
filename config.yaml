@@ -5,3 +5,6 @@ working_directory: '/Users/emanuelmfonseca/Downloads/sulfidic-fish-genome-assemb
 
 # number of CPUs available for analysis
 ncpus: 6
+
+# Define the path to fastq-dump
+fastq_dump_path: 'Softwares/sratoolkit/bin/fastq-dump'
