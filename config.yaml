@@ -1,0 +1,7 @@
+# Configuration file for the project (sulfidic-fish-genome-assembly).
+
+# Define the absolute path to the working directory.
+working_directory: '/Users/emanuelmfonseca/Downloads/sulfidic-fish-genome-assembly'
+
+# number of CPUs available for analysis
+ncpus: 6

@@ -1,0 +1,16 @@
+name: sulfidic-fish-assembly-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - snakemake=7.32.4
+  - python=3.11
+  - numpy=2.0.2
+  - pandas=2.2.3
+  - fastqc=0.12.1
+  - trimmomatic=0.39
+  - bwa=0.7.18
+  - samtools=1.21
+  - picard=3.2.0
+  - gatk4=4.5.0.0
